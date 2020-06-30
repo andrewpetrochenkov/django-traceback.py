@@ -1,27 +1,16 @@
 <!--
-https://pypi.org/project/readme-generator/
-https://pypi.org/project/python-readme-generator/
-https://pypi.org/project/django-readme-generator/
+https://readme42.com
 -->
 
-[![](https://img.shields.io/pypi/pyversions/django-traceback.svg?longCache=True)](https://pypi.org/project/django-traceback/)
-[![](https://img.shields.io/pypi/v/django-traceback.svg?maxAge=3600)](https://pypi.org/project/django-traceback/)
-[![Travis](https://api.travis-ci.org/andrewp-as-is/django-traceback.py.svg?branch=master)](https://travis-ci.org/andrewp-as-is/django-traceback.py/)
 
-#### Installation
+[![](https://img.shields.io/pypi/v/django-traceback.svg?maxAge=3600)](https://pypi.org/project/django-traceback/)
+[![](https://img.shields.io/badge/License-Unlicense-blue.svg?longCache=True)](https://unlicense.org/)
+[![](https://github.com/andrewp-as-is/django-traceback.py/workflows/tests42/badge.svg)](https://github.com/andrewp-as-is/django-traceback.py/actions)
+
+### Installation
 ```bash
 $ [sudo] pip install django-traceback
 ```
-
-#### Models
-model|`__doc__`
--|-
-`Traceback` |Traceback(id, type, value, traceback, path, created_at)
-
-#### Functions
-function|`__doc__`
--|-
-`django_traceback.utils.save_traceback(path=None)` |save a traceback
 
 #### Examples
 ```python
@@ -33,11 +22,11 @@ from apps.celery import celery_app
 def task():
     try:
         r = requests.get('url')
-    except (requests.exceptions.ConnectionError,requests.exceptions.ReadTimeout):
+    except (requests.exceptions.ConnectionError,...):
         save_traceback(__file__)
         # init task again
 ```
 
 <p align="center">
-    <a href="https://pypi.org/project/django-readme-generator/">django-readme-generator</a>
+    <a href="https://readme42.com/">readme42.com</a>
 </p>
